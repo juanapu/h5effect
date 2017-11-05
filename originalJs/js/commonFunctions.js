@@ -32,6 +32,8 @@ function lerpAngle(a, b, t) {
 	return a + d * t;
 }
 
+/*用于趋近某个值，只需将x,y坐标赋值就可以趋近该值*/
+
 function lerpDistance(aim, cur, ratio) {
 	var delta = cur - aim;
 	return aim + delta * ratio;
@@ -76,7 +78,7 @@ function rateRandom(m, n) {
 		}
 	}
 }
-
+/*判断两坐标点的距离是否是小于某个值*/
 function distance(x1, y1, x2, y2, l) {
 	var x = Math.abs(x1 - x2);
 	var y = Math.abs(y1 - y2);
@@ -100,7 +102,6 @@ function AABBbox(object1, w1, h1, object2, w2, h2, overlap) {
 	if (A1 > B2 || B1 < A2 || C1 > D2 || D1 < C2) return false;
 	else return true;
 }
-
 
 function dis2(x, y, x0, y0) {
 	var dx = x - x0;

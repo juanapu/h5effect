@@ -1,0 +1,5 @@
+	 <div class="wrap">
+	 	<div id="wrapInner">
+			 <canvas id="canv"></canvas>
+		</div>
+	</div>
