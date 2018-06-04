@@ -30,11 +30,11 @@ function main(){
 function init(){
 	icon={
 		icon0: {
-				cordX: 100, // init coordinate x, y
-				cordY: 100,
+				cordX: 200, // init coordinate x, y
+				cordY: 200,
 				current: {  // store current coordinate x, y
-					cordX: 100,
-					cordY: 100
+					cordX: 200,
+					cordY: 200
 				},
 				random: {   //generate random coordinate x, y
 					cordX: 0,
@@ -42,14 +42,15 @@ function init(){
 				},
 				changeDr: true,  // change direction  
 				moveDs: 100, //* move distance for each icon
-				lineIcons: ['icon2','icon3','icon1'] //store the icons to connect with
+				// lineIcons: ['icon2','icon3','icon1'] //store the icons to connect with
+				lineIcons: ['icon1']
 		},
 		icon1: {
-				cordX: 350,
-				cordY: 200,
+				cordX: 650,
+				cordY: 670,
 				current: {
-					cordX: 350,
-					cordY: 200
+					cordX: 650,
+					cordY: 650
 				},
 				random: {
 					cordX: 450,
@@ -60,11 +61,11 @@ function init(){
 				lineIcons: ['icon3','icon2','icon4','icon5']
 		},
 		icon2: {
-			cordX: 650,
-			cordY: 30,
+			cordX: 900,
+			cordY: 200,
 			current: {
-					cordX: 650,
-					cordY: 30
+					cordX: 900,
+					cordY: 200
 				},
 			random: {
 					cordX: 700,
@@ -75,10 +76,10 @@ function init(){
 		},
 		icon3: {
 			cordX: 100,
-			cordY: 400,
+			cordY: 500,
 			current: {
 				cordX: 100,
-				cordY: 400
+				cordY: 500
 			},
 			random: {
 				cordX: 200,
@@ -88,11 +89,11 @@ function init(){
 			moveDs: 130
 		},
 		icon4: {
-			cordX: 500,
-			cordY: 400,
+			cordX: 900,
+			cordY: 900,
 			current: {
-				cordX: 500,
-				cordY: 400
+				cordX: 900,
+				cordY: 900
 			},
 			random: {
 				cordX: 550,
@@ -100,14 +101,14 @@ function init(){
 			},
 			changeDr: true,
 			moveDs: 100,
-			lineIcons: ['icon5','icon2']
+			// lineIcons: ['icon5','icon2']
 		},
 		icon5: {
-			cordX: 330,
-			cordY: 600,
+			cordX: 230,
+			cordY: 900,
 			current: {
-				cordX: 330,
-				cordY: 600
+				cordX: 230,
+				cordY: 900
 			},
 			random: {
 				cordX: 400,
@@ -115,9 +116,8 @@ function init(){
 			},
 			changeDr: true,
 			moveDs: 50,
-			lineIcons:['icon3']
+			// lineIcons:['icon3']
 		}
-	
 	};
 	ctx.strokeStyle="#fff";  
 	timeNow=Date.now();

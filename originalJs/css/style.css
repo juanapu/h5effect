@@ -10,20 +10,28 @@ body,html{
 	padding: 0px;
 	margin: 0px;
 	border: none;
+	vertical-align: middle;
+	background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528080519176&di=064d455a771345cfe34da128062ca4e3&imgtype=0&src=http%3A%2F%2Fpic30.photophoto.cn%2F20140318%2F0020032983200895_b.jpg");
 }
 div.wrap{
-	width: 100%;
+	width: 1280px;
 	height: 1000px;
-	background-color: gray;
+	/*background: url("http://7xsoic.com1.z0.glb.clouddn.com/h5/bg/h5bg.jpeg");*/
+	background: url("http://7xsoic.com1.z0.glb.clouddn.com/500241376.jpg");
+	background-size: cover;
+	display: table;
 }
 div#wrapInner{
-	width: 80%;
-	height: 700px;
+	width: 700px;
+	height: 500px;
 	margin: auto;
+	vertical-align: middle;
+	padding-top: 100px;
+	opacity: .5;
 }
 
 /***canvas***/
-canvas#canv{ 
-/*	width: 100%;  */
-	background-color: red;
+#canv{
+/*	background-color: red;
+	opacity: .5;*/
 }

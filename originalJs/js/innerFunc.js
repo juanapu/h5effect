@@ -19,7 +19,7 @@ function drawIcon(){
 		    ranDomCr(i,icon[index].moveDs);
         };
 
-		img.src='./src/img/play'+i+'.png';
+		img.src='./src/img/play'+'3'+'.png';
 		/*check whether the icon reached to target random coordinate. if reached, generate another random coordinate*/
 		icon[index].current.cordX=lerpDistance(icon[index].random.cordX, icon[index].current.cordX, 0.95);
 		icon[index].current.cordY=lerpDistance(icon[index].random.cordY, icon[index].current.cordY, 0.95);
@@ -42,6 +42,7 @@ function drawIcon(){
 					//console.log(targetIcon);
 
 					ctx.closePath();
+					ctx.strokeStyle="#92eff0";
 					ctx.stroke(); 
 				}
 			};
